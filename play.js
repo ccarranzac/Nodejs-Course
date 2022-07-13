@@ -1,5 +1,3 @@
-let name = "Max";
-let age = 20;
 let hasHobbies = true;
 
 const sumUser = (userName, userAge, userHasHobby) => {
@@ -50,3 +48,25 @@ for (let item of hobbies) {
 
 hobbies = hobbies.map((el) => "Hobby " + el);
 console.log(hobbies);
+
+const copiedArray = [...hobbies];
+console.log(copiedArray);
+
+const toArray = (...args) => {
+  return args;
+};
+
+console.log(toArray(1, 2, 3, 4));
+
+const printName = ({ name, age }) => {
+  console.log(name);
+  console.log(age);
+};
+
+printName(person);
+
+const { name, age } = person;
+console.log(name);
+
+let [hobby1, hobby2] = hobbies;
+console.log(hobby1);
