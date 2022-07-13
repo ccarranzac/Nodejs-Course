@@ -70,3 +70,12 @@ console.log(name);
 
 let [hobby1, hobby2] = hobbies;
 console.log(hobby1);
+
+const fetchData = () => {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Done");
+    }, 1500);
+  });
+  return promise;
+};
