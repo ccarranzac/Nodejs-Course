@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { Module } = require("module");
 
 const requestHandler = (req, res) => {
   const url = req.url;
