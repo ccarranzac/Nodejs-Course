@@ -1,0 +1,12 @@
+.box {
+  border-radius: 5px;
+  border: 4px solid black;
+}
+
+.home {
+  background-color: aqua;
+}
+
+.users {
+  background-color: salmon;
+}
