@@ -9,8 +9,11 @@ const products = [];
 
 router.get("/add-product", (req, res) => {
   res.render("add-product", {
-    title: "Add Product",
+    pageTitle: "Add Product",
     path: "add-product",
+    formsCSS: true,
+    productCSS: true,
+    activeAdd: true,
   });
   //res.sendFile(path.join(rootDir, "views", "add-product.html"));
 });
