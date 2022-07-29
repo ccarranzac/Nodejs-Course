@@ -3,7 +3,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 // const expressHbs = require("express-handlebars");
 
-const adminData = require("./routes/admin");
+const errorController = require("./controllers/error");
+
+const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 
 const app = express();
@@ -19,13 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //serving static files
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/admin", adminData.routes);
+app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
-app.use((req, res, next) => {
-  res.render("404", { pageTitle: "Page Not Found", path: "" });
-  //res.sendFile(path.join(__dirname, "views", "404.html"));
-});
+app.use(errorController.get404);
 
 //execute this function with every incoming request
 app.listen(3000);
