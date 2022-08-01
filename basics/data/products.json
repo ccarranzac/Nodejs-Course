@@ -1,8 +1,9 @@
 [
   {
-    "title": "test book!",
+    "title": "test Book!",
     "imageUrl": "https://www.collinsdictionary.com/images/full/book_181404689_1000.jpg",
-    "description": "An awesome book!",
-    "price": "19.99"
+    "description": "awesome Book!",
+    "price": "19.99",
+    "id": "0.9398594940755649"
   }
 ]
