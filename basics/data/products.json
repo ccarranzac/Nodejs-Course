@@ -1,1 +1,8 @@
-[{"title":"book"},{"title":"new book"},{"title":"another"},{"title":"antoher one"}]
+[
+  {
+    "title": "test book!",
+    "imageUrl": "https://www.collinsdictionary.com/images/full/book_181404689_1000.jpg",
+    "description": "An awesome book!",
+    "price": "19.99"
+  }
+]
